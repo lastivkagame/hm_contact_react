@@ -15,6 +15,7 @@ export default class ContactStatistics extends Component {
                     <Card.Body>
                         <Card.Text>Statistics</Card.Text>
                         <Card.Text>Count of contacts: {this.props.countofcontacts}</Card.Text>
+                        <Card.Text>Count of favorite contact: {this.props.countofcontacts}</Card.Text>
                     </Card.Body>
                 </Card>
             </>

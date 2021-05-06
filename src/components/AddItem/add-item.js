@@ -9,8 +9,15 @@ export default class AddItem extends Component {
     state = {
         show: false,
         name: "",
+        lastname: "",
         age: "",
-        // social: null,
+        telephone: "",
+        email: "",
+        favorite: false,
+        social: {
+            fb: null,
+            insta: null
+        },
     }
 
     onNameChange = (e) => {
@@ -21,9 +28,35 @@ export default class AddItem extends Component {
         });
     }
 
+    onSocialFbChange = (e) => {
+
+        // let t = social.fb;
+        // this.setState({
+        //    social.fb = e.target.value,
+        // });
+    }
+
+    onEmailChange = (e) => {
+        this.setState({
+            email: e.target.value,
+        });
+    }
+
+    onTelephoneChange = (e) => {
+        this.setState({
+            telephone: e.target.value,
+        });
+    }
+
     onAgeChange = (e) => {
         this.setState({
             age: e.target.value,
+        });
+    }
+
+    onLastnameChange = (e) => {
+        this.setState({
+            lastname: e.target.value,
         });
     }
 
@@ -64,7 +97,7 @@ export default class AddItem extends Component {
                             </div>
                 <Modal show={this.state.show}>
                     <Modal.Header closeButton>
-                        <Modal.Title>Modal title</Modal.Title>
+                        <Modal.Title>Add Contact</Modal.Title>
                     </Modal.Header>
 
                     <Modal.Body>
@@ -72,7 +105,11 @@ export default class AddItem extends Component {
                             <input onChange={this.onNameChange}
                                 name="name" placeholder="enter name"
                                 className="form-control mb-3" value={this.state.name} />
-                            <input onChange={this.onAgeChange} value={this.state.age} name="age" placeholder="enter age" className="form-control" />
+                            <input onChange={this.onLastnameChange} value={this.state.lastname} name="lastname" placeholder="enter lastname" className="form-control mb-3" />
+                            <input onChange={this.onAgeChange} value={this.state.age} name="age" placeholder="enter age" className="form-control mb-3" />
+                            <input onChange={this.onTelephoneChange} value={this.state.telephone} name="telephone" placeholder="enter telephone" className="form-control mb-3" />
+                            <input onChange={this.onEmailChange} value={this.state.email} name="email" placeholder="enter email" className="form-control" />
+                            
                             <div className="bottom-right">
                                 {/* <button type="submit" className="btn btn-success"><i className="fas fa-plus-circle"></i>
                                 </button> */}

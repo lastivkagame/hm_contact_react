@@ -167,6 +167,12 @@ export default class ContactBody extends Component {
         };
 
         let cpuntofcontacts = this.state.data.length;
+        let favorite_count =0;
+
+        // for (let i = 0; i < this.state.data.length; i++) {
+        //     if()
+            
+        // }
 
         const { deps } = this.state;
         //let //addModalClose=()=>this.setState({addModalShow: false});

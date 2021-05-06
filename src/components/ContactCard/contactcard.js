@@ -23,8 +23,8 @@ export default class ContactCard extends Component {
         const name = this.state.selected ? "elem-marg alert alert-success" : "elem-marg";
         let fb;
         let insta;
-        let fb_img = "";
-        let insta_img = "";
+        let fb_text = "";
+        let insta_text = "";
 
 
         console.log(this.props.social);
@@ -32,8 +32,8 @@ export default class ContactCard extends Component {
         try {
             if (this.props.social) {
 
-                fb_img = this.props.social.fb;
-                insta_img = this.props.social.insta;
+                fb_text = this.props.social.fb;
+                insta_text = this.props.social.insta;
 
                 fb = this.props.social.fb ? "" : "d-none";
                 insta = this.props.social.insta ? "" : "d-none";
@@ -64,8 +64,8 @@ export default class ContactCard extends Component {
                             <h4><strong>Telephone:</strong> {this.props.telephone}</h4>
                             <h4><strong>Email:</strong> {this.props.email}</h4>
 
-                            <h4 className={fb}><img class="img-social" src="https://icons-for-free.com/iconfiles/png/512/color+facebook+icon-1320168272811213233.png" src={fb_img} /></h4>
-                            <h4 className={insta}><img class="img-social" src="https://i.pinimg.com/originals/28/cc/b2/28ccb26da651ad37425371f714d36b5e.png" src={insta_img} /></h4>
+                            <h4 className={fb}><img class="img-social" src="https://icons-for-free.com/iconfiles/png/512/color+facebook+icon-1320168272811213233.png"  />{fb_text}</h4>
+                            <h4 className={insta}><img class="img-social" src="https://i.pinimg.com/originals/28/cc/b2/28ccb26da651ad37425371f714d36b5e.png" />{insta_text}</h4>
                         </div>
                     </div>
                     <div class="d-flex justify-content-end">
