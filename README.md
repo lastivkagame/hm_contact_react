@@ -1,3 +1,5 @@
+Можете будь лакска ще декілька ще декілька днів не перевіряти (до понеділка), бо треба пофіксити трохи чимало
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
