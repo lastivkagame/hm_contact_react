@@ -20,7 +20,7 @@ export default class Header extends Component {
           </button>
           <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
             {/* <Menu></Menu> */}
-            <SearchContact onSearch={()=>this.props.onSearch}></SearchContact>
+            <SearchContact onSearch={this.props.onSearch}></SearchContact>
           </div>
         </div>
       </nav>

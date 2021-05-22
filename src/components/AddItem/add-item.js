@@ -74,7 +74,7 @@ export default class AddItem extends Component {
     showModal = e => {
 
         console.log("work show modal");
-        if (this.show === true) {
+        if (this.state.show === true) {
             this.setState({
                 show: false
             });
@@ -84,7 +84,7 @@ export default class AddItem extends Component {
             this.setState({
                 show: true
             });
-            console.log(this.show);
+            console.log(this.state.show);
         }
     };
 
