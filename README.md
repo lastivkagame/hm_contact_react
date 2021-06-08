@@ -1,5 +1,4 @@
 IMPORTANT: This prpject was re-maded please follow this-> https://github.com/lastivkagame/hm_contact_react_work
-(Можете будь лакска ще декілька ще декілька днів не перевіряти (до понеділка), бо треба пофіксити трохи чимало)
 
 
 
